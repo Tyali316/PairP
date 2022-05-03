@@ -113,7 +113,7 @@ function twoStrang(p1, p2){
 }
 let x = [`s`,`o`,`d`,`a`,`r`,`k`,`t`,`h`,`e`,`c`,`o`,`n`,`o`,`f`,`m`,`a`,`n`];
 let y = [`m`,`a`,`d`,`o`,`n`,`n`,`a`,`o`,`f`,`t`,`h`,`e`,`r`,`o`,`c`,`k`,`s`];
-
+let Tyson = "WAS HERE"
 let w = x.length;
 // console.log(twoStrang(x,y));
 console.log(y.includes(x.slice(0,w)));
