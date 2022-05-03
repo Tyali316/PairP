@@ -82,3 +82,90 @@ function vowelChecker(x){
 }
 vowelChecker(`i`);
 console.log();
+
+// MEDIUM(2)
+// Create a function that accepts two strings, then determines whether or not the first string is an anagram of the
+// second string by returning a boolean.
+// Example:
+// Input: String 1: So dark the con of man
+// String 2: Madonna of the Rocks
+// Output: True
+// Input: String 1: Things are good
+// String 2: Dogs eat ants
+// Output: False
+
+
+
+function twoStrang(p1, p2){
+    let u = p1.length; 
+    let t = p2.length;
+    let e = p1.slice(0,u);
+    let p = p2.slice(0,t);
+  
+  for (i = 0; i <= 0; p1.length){
+      if (p1.includes(p)) {
+       return true;
+    }
+      else {
+          return false;
+      }
+}
+}
+let x = [`s`,`o`,`d`,`a`,`r`,`k`,`t`,`h`,`e`,`c`,`o`,`n`,`o`,`f`,`m`,`a`,`n`];
+let y = [`m`,`a`,`d`,`o`,`n`,`n`,`a`,`o`,`f`,`t`,`h`,`e`,`r`,`o`,`c`,`k`,`s`];
+
+let w = x.length;
+// console.log(twoStrang(x,y));
+console.log(y.includes(x.slice(0,w)));
+
+
+
+// MEDIUM(3)
+// Write a function that takes in two numbers and determines the largest positive integer that divides the two
+// numbers without a remainder.
+// Example 1:
+// Input: gdc_two_numbers(336,360)
+// Output: 24
+// Example 2:
+// Input: gdc_two_numbers(78,126)
+// Output: 6
+
+
+
+
+
+
+
+// Medium(4)
+// Create a car object with the items: Make, Model, Year, Milage, and Color. Then create 3 methods in the object;
+// A driveToWorkmethod, driveAroundTheWorldmethod, and runErrandsmethod. Each of these methods
+// should affect the car’s mileage adding to it each time and console logging the old mileage and the new
+// mileage.
+// driveToWork = 33 miles
+// driveAroundTheWorld = 24,000 miles
+// runErrands = 30 miles
+// Example 1:
+// car.driveToWork();
+// Output: old mileage: 2000 | new mileagea: 2033
+// Explanation: 2000 + 33 = 2033
+// Example 2:
+// car.driveAroundTheWorld();
+// Output: old mileage: 2033 | new mileagea: 26033
+// Example 2:
+// car.runErrands();
+// Output: old mileage: 26033 | new mileagea: 26063
+
+
+
+
+
+
+// Hard(1)
+// Write a function that takes in a string and returns a boolean value whether or not the string contains a pair of
+// matching brackets ({}, [], ()). These brackets must be nested appropriately in order to return a true value
+// Example 1:
+// Input: str = “{hello world}” brackets(srt)
+// Output: True
+// Example 2:
+// Input: str = “{hello world]” brackets(srt)
+
