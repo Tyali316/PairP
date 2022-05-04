@@ -8,23 +8,23 @@
 // Output: Even numbers: [2, 4, 16]
 // Odd Numbers: [7, 11, 15]
 
-// function Ty(x) {
-//  let list1 = [];
-//  let list2 = [];
+function Ty(x) {
+ let list1 = [];
+ let list2 = [];
 
-//  for (let i = 0; i <= x.length; i++) {
-//     if (x[i]%2 == 0){
-//       list1.push(x[i]);
-//     }
-//     else if (x[i]%2 != 0){
-//         list2.push(x[i])
-//     }
-// }
-// let a = console.log(`even numbers: ${list1}`);
-// let b = console.log(`odd numbers: ${list2}`);
-// return a, b;
+ for (let i = 0; i <= x.length; i++) {
+    if (x[i]%2 == 0){
+      list1.push(x[i]);
+    }
+    else if (x[i]%2 != 0){
+        list2.push(x[i])
+    }
+}
+let a = console.log(`even numbers: ${list1}`);
+let b = console.log(`odd numbers: ${list2}`);
+return a, b;
 
-// };
+};
 // let y = [2, 4, 7, 11, 15, 16];
 // Ty(y);
 
@@ -52,7 +52,7 @@ let numArray = [1,2,3,4,5,6,7,8,9,10];
 let group1 = [];
 
 for (i = 0; i <= numArray.length; i++){
-     if (numArray[i] > 0){
+     if (numArray[i] != 0){
        group1.push(numArray[i]);
     }
     else {
@@ -102,8 +102,8 @@ function twoStrang(p1, p2){
     let e = p1.slice(0,u);
     let p = p2.slice(0,t);
   
-  for (i = 0; i <= 0; p1.length){
-      if (p1.includes(p)) {
+  for (i = 0; i <= 0; p2.length){
+      if (p1.includes(p2[i])) {
        return true;
     }
       else {
@@ -111,8 +111,8 @@ function twoStrang(p1, p2){
       }
 }
 }
-let x = [`s`,`o`,`d`,`a`,`r`,`k`,`t`,`h`,`e`,`c`,`o`,`n`,`o`,`f`,`m`,`a`,`n`];
-let y = [`m`,`a`,`d`,`o`,`n`,`n`,`a`,`o`,`f`,`t`,`h`,`e`,`r`,`o`,`c`,`k`,`s`];
+let x = `So dark the con of man`;
+let y = `Madonna of the rocks`;
 
 let w = x.length;
 // console.log(twoStrang(x,y));
@@ -124,14 +124,15 @@ console.log(y.includes(x.slice(0,w)));
 // Write a function that takes in two numbers and determines the largest positive integer that divides the two
 // numbers without a remainder.
 // Example 1:
-// Input: gdc_two_numbers(336,360)
+// Input: gcd_two_numbers(336,360)
 // Output: 24
 // Example 2:
-// Input: gdc_two_numbers(78,126)
+// Input: gcd_two_numbers(78,126)
 // Output: 6
 
-
-
+// function gcd_two_numbers(num1,num2)
+ 
+ 
 
 
 
@@ -146,7 +147,7 @@ console.log(y.includes(x.slice(0,w)));
 // runErrands = 30 miles
 // Example 1:
 // car.driveToWork();
-// Output: old mileage: 2000 | new mileagea: 2033
+// Output: old mileage: 2000 | new mileage: 2033
 // Explanation: 2000 + 33 = 2033
 // Example 2:
 // car.driveAroundTheWorld();
@@ -156,6 +157,28 @@ console.log(y.includes(x.slice(0,w)));
 // Output: old mileage: 26033 | new mileagea: 26063
 
 
+let car = {
+   make: `Honda`,
+   model: `LX`,
+   year:`2020`,
+   color: `black`,
+   mileage: `mileage`,
+   updateMileage: function() {
+        return ++car.mileage;
+ },
+   driveToWork: function(){
+    return `33 miles`
+   }, 
+   driveAroundTheWorld: function(){
+   return `24,000 miles`
+   },
+   runErrands: function(){
+       return `30 miles`
+   }
+}
+console.log(car.updateMileage);
+car.updateMileage();
+console.log(car.updateMileage);
 
 
 
