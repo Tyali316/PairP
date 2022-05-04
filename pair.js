@@ -23,10 +23,10 @@ function Ty(x) {
 let a = console.log(`even numbers: ${list1}`);
 let b = console.log(`odd numbers: ${list2}`);
 return a, b;
-
 };
-// let y = [2, 4, 7, 11, 15, 16];
-// Ty(y);
+
+let ray = [2, 4, 7, 11, 15, 16];
+Ty(ray);
 
 
 
@@ -130,10 +130,17 @@ console.log(y.includes(x.slice(0,w)));
 // Input: gcd_two_numbers(78,126)
 // Output: 6
 
-// function gcd_two_numbers(num1,num2)
+function gcd(x, y) {
+while(y) {
+    var t = y;
+    y = x % y;
+    x = t;
+  }
+  return x;
+};
  
- 
-
+ console.log(gcd(336,360));
+console.log(gcd(78,126));
 
 
 
@@ -162,23 +169,24 @@ let car = {
    model: `LX`,
    year:`2020`,
    color: `black`,
-   mileage: `mileage`,
+   mileage: 0,
    updateMileage: function() {
-        return ++car.mileage;
+       let a = this.mileage;
+        return `The old mileage: ${this.mileage} and the new mileage: ${++this.mileage}`;
  },
    driveToWork: function(){
-    return `33 miles`
+    return `The old mileage: ${this.mileage} and the new mileage: ${+33} miles`;
    }, 
    driveAroundTheWorld: function(){
-   return `24,000 miles`
+    return ("The old mileage: 33 miles and the new mileage: this.mileage +24000");
    },
    runErrands: function(){
-       return `30 miles`
+       
    }
 }
-console.log(car.updateMileage);
-car.updateMileage();
-console.log(car.updateMileage);
+// console.log(car.driveToWork());
+// console.log(car.driveAroundTheWorld());
+
 
 
 
