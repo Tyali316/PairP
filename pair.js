@@ -39,27 +39,21 @@ Ty(ray);
 // Input: numArray = [10, 18, 19, 29, 33, 35, 47, 66, 83]
 // Output: primeArray = [19 ,29 ,47 , 83]
 
-// function numbers(a) {
-//  let group1 = [];
- 
-
-// // 
-// //}
-// return console.log(group1); 
-
 let numArray = [1,2,3,4,5,6,7,8,9,10];
 // numbers(numArray);
 let group1 = [];
 
-for (i = 0; i <= numArray.length; i++){
-     if (numArray[i] != 0){
-       group1.push(numArray[i]);
+for (let i = 0;i <= numArray.length; i++) {
+    if (numArray[i] % i == 0) {
+       console.log(`error`);
     }
     else {
-        console.log(`error`);
+      group1.push(numArray[i]); 
     }
 }
+
 console.log(group1);
+
 
 // MEDIUM(1)
 // Create a Function Called “vowelChecker” that takes in a single argument (x) and logs weather or not the input
@@ -111,6 +105,8 @@ function twoStrang(p1, p2){
       }
 }
 }
+let x = `So dark the con of man`;
+let y = `Madonna of the rocks`;
 
 let w = x.length;
 // console.log(twoStrang(x,y));
@@ -167,23 +163,25 @@ let car = {
    model: `LX`,
    year:`2020`,
    color: `black`,
-   mileage: 0,
-   updateMileage: function() {
-       let a = this.mileage;
-        return `The old mileage: ${this.mileage} and the new mileage: ${++this.mileage}`;
- },
-   driveToWork: function(){
-    return `The old mileage: ${this.mileage} and the new mileage: ${+33} miles`;
-   }, 
-   driveAroundTheWorld: function(){
-    return ("The old mileage: 33 miles and the new mileage: this.mileage +24000");
+   mileage: 2000,
+   
+   driveToWork(){ 
+    console.log('Old mileage: ' + this.mileage);
+   console.log('New Milage : ' , this.mileage + 33);
+},
+    driveAroundTheWorld(){
+    console.log(`Old mileage: 2033`);
+    console.log(`New mileage: ` , 2300 + 24000);
    },
-   runErrands: function(){
-       
+   runErrands(){
+      console.log(`Old mileage: 26300`);
+      console.log(`New mileage: `, 26300 + 30);
    }
 }
-// console.log(car.driveToWork());
-// console.log(car.driveAroundTheWorld());
+console.log(car.driveToWork());
+console.log(car.driveAroundTheWorld());
+console.log(car.runErrands());
+
 
 
 
