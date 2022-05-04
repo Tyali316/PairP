@@ -111,8 +111,6 @@ function twoStrang(p1, p2){
       }
 }
 }
-let x = `So dark the con of man`;
-let y = `Madonna of the rocks`;
 
 let w = x.length;
 // console.log(twoStrang(x,y));
